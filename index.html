@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Syte By Zemlyakov</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stls.css">
+    <link rel="shortcut icon" href="https://v.od.ua/uploads/92/logo.png" type="image.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <header class="container-fluid">
+      <div class="m-auto p-3">
+        <img id="logo" src="https://sun9-44.userapi.com/impg/xrxMqvlQ8dMDqnPOIbPO6pQX5pcKoJsvdDW7lQ/rd4WMldu--M.jpg?size=555x556&quality=96&sign=3da25602f6c809f81a30ad351e1d05c9&type=album" alt="logo">
+        <h1 class="name" style = "color: #3B0101"> Syte by Zemlyakov </h1>
+      </div>
+    </header>
+    <main class="m-auto p-3">
+      <div>
+       <div class="m-auto" id="mainer">
+        <p class="row" id="navigation">
+          <a class="col-sm-12 col-md-4 col-lg-4 text-lg-center text-md-center" href="#links">Список гиперссылок</a>
+          <a class="col-sm-12 col-md-4 col-lg-4 text-lg-center text-md-center" href="#table">Таблица</a>
+          <a class="col-sm-12 col-md-4 col-lg-4 text-lg-center text-md-center" href="#form">Форма</a>
+        </p>
+
+
+        <div id="links">
+          <ol>
+			<li>Я НЕ ПОНИМАЛ,ПОЧЕМУ САЙТ НЕ РАБОТАЕТ,ПОЭТОМУ Я НАПИСАЛ ЕГО ЗАНОВО</li>
+            <li>Абсолютная гиперссылка на главную страницу<a href="http://bogoslovie.pro/" id="#attention"> сайта</a></li>
+				<li>Абсолютная ссылка на главную в<a href="https://kartofan.org/"> протоколе https</a></li>
+				<li>Ссылка на файл на сервере FTP<a href="ftp://example.com/myfile.zip"> без авторизации</a></li>
+				<li><a href="ftp://user:password@example.com/myfile.zip">С авторизацией</a></li>
+				<li>Ссылка на фрагмент страницы некоторого
+					<a href="https://ru.wikipedia.org/wiki/Кошка#Породы_кошек"> сайта</a>
+				</li>
+				<li><a href="#Infa">Cсылка на фрагмент текущей страницы</a></li>
+				<li>
+					<ul>
+						<li><a href="#attention" title="Тематика">Оглавление</a></li>
+						<li><a href="#attention" title="Основная информация">Основной материал</a></li>
+					</ul>
+				</li>
+            <li><a>Ссылка без href</a></li>
+           <li><a>Ссылка без href</a></li>
+			<li><a href="">Ссылка с пустым href</a></li>
+			<li><a href="https://kartofan.org/" rel="nofollow">переход запрещен</a></li>
+			<li><a href="https://kartofan.org/" rel="noindex">Запрещенная для индексации поисковиками</a></li>
+			<li>К просмотру рекомендуется данная <a  id = "Infa" href="https://kartofan.org/">  информация</a></li>
+            <li>
+              <ol>
+                <li><img src="https://memepedia.ru/wp-content/uploads/2021/04/qblulgcbrwk-%E2%80%94-kopija.jpg" width="100" height="100" usemap="#rectangle" alt="Ссылка"><map name = "rectangle"><area shape = "rect" coords = "0,0,100,100" href = "" alt="Image1"></map></li>
+                <li><img src="https://img1.liveinternet.ru/images/attach/c/2//70/278/70278819_0000000000000000000000000000000.jpg" width="100" height="100" usemap="#circ" alt="Ссылка"><map name = "circ"><area shape = "circle" coords = "50,50,50" href = "https://vk.com" alt="Ссылка"></map></li>
+              </ol>
+		     </li>
+            <li><a href="new.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+            <li><a href="about/new.html">Относительная ссылка на страницу в каталоге about</a></li>
+            <li><a href="../new.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../new.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+            <li><a href="/">Сокращенная ссылка на главную</a></li>
+            <li><a href="/folder/new.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+          </ol>
+        </div>
+
+        <div class = "row" >
+          <h2 class="col-sm-12 order-sm-first order-last"> Таблица</h2>
+          <table class = "p-3">
+            <tbody>
+              <tr>
+                <th class="header_table" colspan="4">Заголовок таблицы</th>
+              </tr>
+              <tr>
+                <td>Ячейка 11</td>
+                <td>Ячейка 12</td>
+                <td>Ячейка 13</td>
+                <td>Ячейка 14</td>
+              </tr>
+              <tr class="even">
+                <td>Ячейка 21</td>
+                <td>Ячейка 22</td>
+                <td rowspan="2" class="union">Ячейка 23</td>
+                <td>Ячейка 24</td>
+              </tr>
+              <tr>
+                <td>Ячейка 31</td>
+                <td>Ячейка 32</td>
+                <td>Ячейка 34</td>
+              </tr>
+              <tr class="even" align="center">
+                <td>Ячейка 41</td>
+                <td colspan="2" class="union">Ячейка 42</td>
+                <td>Ячейка 44</td>
+              </tr>
+              <tr>
+                <td>Ячейка 51</td>
+                <td>Ячейка 52</td>
+                <td>Ячейка 53</td>
+                <td>Ячейка 54</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-sm-12 order-sm-last order-first">
+          <h2 id="form">Форма</h2>
+          <form method="post">               
+            <label>Имя:<br>
+              <input name="field-name" value="" placeholder="Имя">
+            </label><br><br>
+
+            <label>
+              Ваш email:<br>
+              <input name="field-email" value="" placeholder="test@example.com" type="email">
+            </label><br><br>
+
+            <label>
+              Дата рождения:<br>
+                <input name="field-date" value="" type="date">
+            </label><br><br>
+
+            Пол:<br>
+            <label><input type="radio" name="radio-group-1" value="Мужской">Мужской</label>
+            <label><input type="radio" name="radio-group-1" value="Женский">Женский</label><br><br>
+
+            Количество конечностей:<br>
+            <label><input type="radio" name="radio-group-1" value="1">1</label>
+            <label><input type="radio" name="radio-group-1" value="2">2</label>
+            <label><input type="radio" name="radio-group-1" value="3">3</label>
+            <label><input type="radio" name="radio-group-1" value="4">4</label><br><br>
+
+            <label>
+              Сверхспособности:<br>
+              <select name="field-name-4" multiple="multiple">
+                <option value="Бессмертие">Бессмертие</option>
+                <option value="Прохождение сквозь стены">Прохождение сквозь стены</option>
+                <option value="Левитация">Левитация</option>
+              </select>
+            </label><br><br>
+
+            <label>
+              Биография:<br>
+              <textarea name="field-name-2" placeholder="Напишите о себе..."></textarea>
+            </label><br><br>
+
+            <label><input type="checkbox" name="check-1">С контрактом ознакомлен</label><br>
+
+            <input type="submit" value="Отправить">
+
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="m-auto p-2"> Footer by Zemlyakov</footer>
+  </body>
+</html>
