@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Syte By Zemlyakov</title>
+    <script defer src="calculator.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stls.css">
     <link rel="shortcut icon" href="https://v.od.ua/uploads/92/logo.png" type="image.png">
@@ -149,6 +150,15 @@
             <input type="submit" value="Отправить">
 
           </form>
+		
+		    <form>
+			<h2>Калькулятор стоимости заказа</h2>
+			  <input name="price" type="text" placeholder="Стоимость товара">
+			  <input name="num" type="text" placeholder="Количество">
+			  <button type="button" id="button1" onclick="click1()">OK</button>
+			  <hr>Результат:
+			  <p id="res"></p>
+		</form>
         </div>
       </div>
     </main>
