@@ -1,4 +1,4 @@
- function click1() 
+  function click1() 
  {
   let a = document.getElementsByName("price");
   let b = document.getElementsByName("num");
