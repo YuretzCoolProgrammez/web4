@@ -14,3 +14,10 @@
 	  return false;
 	}
   }
+
+ window.addEventListener("DOMContentLoaded", function (event) 
+ {
+    console.log("DOM fully loaded and parsed");
+    let b = document.getElementById("calculateResult");
+    b.addEventListener("click", onClick);
+  });
