@@ -1,14 +1,14 @@
 window.addEventListener('DOMContentLoaded', function (event) {
-  const PRICE1 = 100;
-  const PRICE2 = 200;
-  const PRICE3 = 300;
-  const EXTPRICE = 1000;
-  const RADIO1 = 10;
-  const RADIO2 = 20;
-  const RADIO3 = 30;
-  const CHECK = 50;
-  let price = PRICE1;
-  let extraPrice = EXTPRICE;
+  const PRICE_1 = 50;
+  const PRICE_2 = 100;
+  const PRICE_3 = 200;
+  const EXTRA_PRICE = 0;
+  const RADIO_1 = 10;
+  const RADIO_2 = 15;
+  const RADIO_3 = 20;
+  const CHECKBOX = 50;
+  let price = PRICE_1;
+  let extraPrice = EXTRA_PRICE;
   let radios = document.getElementById("myradios"); 
   let s = document.getElementsByName("myselect");
   let checks = document.getElementById("mycheck");
@@ -22,21 +22,21 @@ window.addEventListener('DOMContentLoaded', function (event) {
     if (select.value === "1") {
       radios.classList.add("d-none");
       checks.classList.add("d-none");
-      extraPrice = EXTPRICE;
-      price = PRICE1;
+      extraPrice = EXTRA_PRICE;
+      price = PRICE_1;
     }
     if(select.value === "2") {
       radios.classList.remove("d-none");
       checks.classList.add("d-none");
       document.getElementById("radio1").checked = true;
-      extraPrice = EXTPRICE;
-      price = PRICE2;
+      extraPrice = EXTRA_PRICE;
+      price = PRICE_2;
     }
     if(select.value === "3"){
       radios.classList.add("d-none");
       checks.classList.remove("d-none");
-      extraPrice = EXTPRICE;
-      price = PRICE3;
+      extraPrice = EXTRA_PRICE;
+      price = PRICE_3;
       document.getElementById("check").checked = false;
     }
   });
@@ -44,11 +44,11 @@ r.forEach(function (currentRadio) {
     currentRadio.addEventListener("change", function (event) {      
         let r = event.target;
         if (r.value === "r1") {      
-            extraPrice = RADIO1;
+            extraPrice = RADIO_1;
             console.log(r.value);
         }
         if (r.value === "r2") {
-            extraPrice = RADIO2;
+            extraPrice = RADIO_2;
             console.log(r.value);
         }
         if (r.value === "r3") {
@@ -59,9 +59,9 @@ r.forEach(function (currentRadio) {
 });
 checkbox.addEventListener("change", function () {
   if (checkbox.checked) {
-      extraPrice = CHECK;
+      extraPrice = CHECKBOX;
   } else {
-      extraPrice = EXTPRICE;
+      extraPrice = EXTRA_PRICE;
   }
 });
 calc.addEventListener("change", function () {
@@ -71,7 +71,7 @@ calc.addEventListener("change", function () {
     result.innerHTML=(price + extraPrice)*parseInt(count[0].value);
   }
   else{
-      result.innerHTML = "Введите количество";
+      result.innerHTML = "Введите число в поле - количество !";
   }
 });
 });
